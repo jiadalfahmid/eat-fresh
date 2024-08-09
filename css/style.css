@@ -5,8 +5,8 @@
   margin: 0;
   box-sizing: border-box;
   
-  /* outline: 1px solid red;
-  outline-offset: -1px; */
+  outline: 1px solid red;
+  outline-offset: -1px;
 
 
 }
@@ -99,6 +99,7 @@ p{
 
 .banner p{
   margin-bottom: 3rem;
+  max-width: 444px;
 }
 
 .banner-img-container{
@@ -140,6 +141,7 @@ p{
 .decorations .half-circle,
 .decorations .dots-decoration{
   position: absolute;
+  z-index: -1;
 }
 
 .decorations .bc-1{
@@ -219,3 +221,100 @@ footer p{
   color: #fff;
 }
 /* footer section ends */
+
+/* Mobile device css starts */
+@media screen and (max-width:576px) {
+  .container{
+    max-width: 90%;
+  }
+
+  h1{
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+  }
+  
+  h2{
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 2rem;
+  }
+  
+  h3{
+    font-size: 28px;
+    margin-bottom: 0.75rem;
+  }
+
+  .banner-container{
+    flex-direction: column;
+  }
+
+  .banner-text-container{
+    width: 100%;
+  }
+
+  .banner p{
+    margin-bottom: 2rem;
+  }
+
+  .banner-img-container .featured {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .about-me>.container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-me .about-me-text-container{
+    padding-top: 4.2rem;
+    z-index: 1;
+  }
+
+  .about-me .about-me-text-container>P {
+    margin-bottom: 2rem;
+  }
+
+  .about-me-img-container .about-me-img img{
+    z-index: 1;
+    position: relative;
+    margin-bottom: -4px;
+  }
+
+  .decorations .bc-1{
+    top: -7%;
+    
+  }
+
+  .decorations .bc-2{
+    top: 40%;
+    right: -16%;
+  }
+
+  .decorations .wc-1{
+    top: -7%;
+    left: 35%;
+    z-index: 0;
+  }
+
+  .decorations .wc-2{
+    z-index: 0;
+  }
+
+  .recipes-container {
+    gap: 0;
+    flex-direction: column;
+  }
+
+  .recipes-container .recipe{
+    margin-bottom: 1rem;
+  }
+
+  .social-container {
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+  }
+}
