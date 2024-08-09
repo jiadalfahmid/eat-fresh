@@ -4,11 +4,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
-  outline: 1px solid red;
-  outline-offset: -1px;
-
-
 }
 
 .container{
@@ -141,7 +136,6 @@ p{
 .decorations .half-circle,
 .decorations .dots-decoration{
   position: absolute;
-  z-index: -1;
 }
 
 .decorations .bc-1{
@@ -243,6 +237,10 @@ footer p{
     margin-bottom: 0.75rem;
   }
 
+  p{
+    font-size: 16px;
+  }
+
   .banner-container{
     flex-direction: column;
   }
@@ -279,6 +277,7 @@ footer p{
     z-index: 1;
     position: relative;
     margin-bottom: -4px;
+    max-width: 100%;
   }
 
   .decorations .bc-1{
